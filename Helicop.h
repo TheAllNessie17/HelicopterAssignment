@@ -17,3 +17,10 @@ public:
 	void descend();
 	void forward();
 	void land();
+
+	int getAltitude() const;
+	int getDistance() const;
+
+};
+
+#endif
