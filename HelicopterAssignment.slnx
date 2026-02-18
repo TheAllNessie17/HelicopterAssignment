@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="HelicopterAssignment.vcxproj" Id="4ee28a49-12fd-4696-b5f1-f1f6d02f5fc1" />
+</Solution>
