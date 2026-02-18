@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="helicopter.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="helo_app_1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helicop.h" />
