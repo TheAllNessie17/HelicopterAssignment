@@ -49,7 +49,56 @@ int main()
     std::cout << "Welcome Pilot!\n";
 	std::cout << "You are on a rescue mission to save a stranded hiker. \n";
 
+	Helicop heli; // create the helicopter object
+
 	char command;
+
+	while (true)
+
+	{
+		std::cout << "\nA = Ascend | D = Descend | F = Forward | L = Land\n";
+		std::cout << "Enter command: ";
+		std::cin >> command;
+
+		command = std::toupper(command); // make case-insensitive
+
+		if (command == 'A')
+		{
+			cmdAscend(heli);
+
+		}
+		else if (command == 'D')
+		{
+			cmdDescend(heli);
+
+			// crash detection
+			if (heli.getAltitude() < 0)
+			{
+				break; // end mission when helicopter crashes
+			}
+
+		}
+		else if (command == 'F')
+		{
+			cmdForward(heli);
+
+		}
+		else if (command == 'V')
+		{
+			cmdLand(heli);
+
+		}
+		else if (command == 'Q')
+		{
+			std::cout << "You quit mid-air. Crash!\n";
+			std::cout << "Mission failed.\n";
+			break;
+		}
+		else
+		{
+			std::cout << "Invalid command. Please try again.\n";
+		}
+	}
 
     return 0;
 }
