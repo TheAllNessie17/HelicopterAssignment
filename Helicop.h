@@ -11,7 +11,7 @@ private:
 
 
 public:
-	helicop(); // constructor
+	Helicop(); // constructor
 
 	void ascend();
 	void descend();
